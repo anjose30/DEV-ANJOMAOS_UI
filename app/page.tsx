@@ -1,12 +1,20 @@
 import Input from "@/components/ui/Input";
+import Textarea from "@/components/ui/Textarea";
 
 export default function page() {
   return (
     <div className="h-svh w-full p-4 flex flex-col gap-2 justify-center items-center">
-      <Input types="email" />
-      <Input label="Nueva entrada" placeholder="texto" types="normal" />
-      <Input label="Nueva entrada" placeholder="texto" types="password" />
-      <Input label="Nueva entrada" placeholder="texto" types="date" />
+      <section className="gap-2 flex flex-col">
+        <h2 className="m-2">Inputs</h2>
+        <Input types="email" />
+        <Input label="Nueva entrada" placeholder="texto" types="normal" />
+        <Input label="Nueva entrada" placeholder="texto" types="password" />
+        <Input label="Nueva entrada" placeholder="texto" types="date" />
+      </section>
+      <section className="gap-2 flex flex-col">
+        <h2 className="m-2">TextArea</h2>
+        <Textarea placeholder="Danos tu opinion " label="Commentario"></Textarea>
+      </section>
     </div>
   );
 }
