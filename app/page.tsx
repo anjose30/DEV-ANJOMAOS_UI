@@ -1,4 +1,5 @@
 import Input from "@/components/ui/Input";
+import Select from "@/components/ui/Select";
 import Textarea from "@/components/ui/Textarea";
 
 export default function page() {
@@ -13,7 +14,21 @@ export default function page() {
       </section>
       <section className="gap-2 flex flex-col">
         <h2 className="m-2">TextArea</h2>
-        <Textarea placeholder="Danos tu opinion " label="Commentario"></Textarea>
+        <Textarea
+          placeholder="Danos tu opinion "
+          label="Commentario"
+        ></Textarea>
+      </section>
+      <section className="gap-2 flex flex-col">
+        <h2 className="m-2">TextArea</h2>
+        <Select
+          label="Armamento"
+          options={[
+            { value: "co", text: "Colombia" },
+            { value: "mx", text: "México" },
+            { value: "ar", text: "Argentina" },
+          ]}
+        />
       </section>
     </div>
   );
